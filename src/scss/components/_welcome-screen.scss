@@ -1,0 +1,81 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.welcome-screen {
+  @include flex-column-center;
+  height: 100vh;
+  text-align: center;
+  @include dark-gradient;
+  color: white;
+
+  h1 {
+    font-size: $font-size-xxxlarge;
+    color: $text-white;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    font-size: $font-size-base;
+    margin-bottom: $spacing-xxl;
+    color: $text-gray;
+  }
+
+}
+
+.welcome-features {
+  display: flex;
+  justify-content: center;
+  gap: $spacing-xl;
+  max-width: 900px;
+  margin: 0 auto $spacing-xxl;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+}
+
+.feature {
+  @include glass-card;
+  padding: $spacing-lg;
+  width: 250px;
+  @include hover-lift;
+  text-align: left;
+
+  h3 {
+    font-size: $font-size-large;
+    margin-bottom: 10px;
+    color: $text-white;
+  }
+
+  p {
+    font-size: $font-size-small;
+    margin-bottom: 0;
+    color: $text-gray;
+  }
+}
+
+.github-link {
+  margin-top: $spacing-lg;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: $spacing-xs;
+    color: $text-white;
+    text-decoration: none;
+    padding: $spacing-xs $spacing-md;
+    border-radius: $border-radius-md;
+    @include glass-card;
+    transition: all $transition-fast;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    svg {
+      fill: currentColor;
+    }
+  }
+}

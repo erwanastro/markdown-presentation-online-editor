@@ -1,0 +1,35 @@
+{
+  "name": "markdown-presentation-online-editor",
+  "description": "Markdown presentation online editor",
+  "author": "erwanastro",
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "reveal.js": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^5.0.0",
+    "sass": "^1.92.0",
+    "terser": "^5.20.0",
+    "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "presentation",
+    "online",
+    "reveal.js",
+    "markdown-editor",
+    "vanilla-js",
+    "open-source"
+  ]
+}

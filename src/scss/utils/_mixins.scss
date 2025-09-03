@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// Gradient backgrounds
+@mixin dark-gradient {
+  background: linear-gradient(135deg, #2b2b2b 0%, #1a1a1a 100%);
+}
+
+// Hover effects
+@mixin hover-lift {
+  transition: transform $transition-fast;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@mixin hover-fade {
+  transition: opacity $transition-fast;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// Card styles
+@mixin glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: $border-radius-lg;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+// Text styles
+@mixin heading-style($size) {
+  font-size: $size;
+  color: $text-white;
+  text-align: left;
+}

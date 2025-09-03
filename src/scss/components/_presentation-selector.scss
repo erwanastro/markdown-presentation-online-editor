@@ -1,0 +1,31 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.presentation-selector {
+  position: fixed;
+  top: $spacing-lg;
+  right: $spacing-lg;
+  z-index: 1000;
+  opacity: 0.7;
+  transition: opacity $transition-fast;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  select {
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $border-radius-sm;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all $transition-fast;
+  }
+
+  &.dark select {
+    background-color: #333;
+    color: white;
+    border-color: #666;
+  }
+}

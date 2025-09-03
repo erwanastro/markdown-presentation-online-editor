@@ -1,0 +1,36 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Computer Monitor -->
+  <rect x="3" y="7" width="26" height="16" rx="1" fill="#2a2a2a" stroke="#4a5568" stroke-width="1"/>
+  
+  <!-- Screen -->
+  <rect x="5" y="9" width="22" height="12" rx="0.5" fill="#1a1a1a"/>
+  
+  <!-- Presentation Slides on Screen -->
+  <!-- Slide 1 (large) -->
+  <rect x="7" y="11" width="8" height="5" rx="0.5" fill="#4299e1" opacity="0.8"/>
+  <rect x="7.5" y="11.5" width="3" height="0.5" fill="#ffffff" opacity="0.7"/>
+  <rect x="7.5" y="12.5" width="5" height="0.3" fill="#ffffff" opacity="0.5"/>
+  <rect x="7.5" y="13" width="4" height="0.3" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Slide 2 (medium) -->
+  <rect x="16" y="11" width="6" height="3" rx="0.3" fill="#38b2ac" opacity="0.6"/>
+  <rect x="16.5" y="11.5" width="2" height="0.3" fill="#ffffff" opacity="0.7"/>
+  <rect x="16.5" y="12" width="3" height="0.2" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Slide 3 (small) -->
+  <rect x="23" y="11" width="4" height="2.5" rx="0.3" fill="#ed8936" opacity="0.6"/>
+  <rect x="23.5" y="11.5" width="1.5" height="0.3" fill="#ffffff" opacity="0.7"/>
+  <rect x="23.5" y="12" width="2" height="0.2" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Navigation dots -->
+  <circle cx="11" cy="17.5" r="0.8" fill="#4299e1"/>
+  <circle cx="13" cy="17.5" r="0.6" fill="#4a5568" opacity="0.5"/>
+  <circle cx="15" cy="17.5" r="0.6" fill="#4a5568" opacity="0.5"/>
+  
+  <!-- Monitor Stand -->
+  <rect x="14" y="23" width="4" height="2" fill="#4a5568"/>
+  <rect x="11" y="25" width="10" height="1" rx="0.5" fill="#4a5568"/>
+  
+  <!-- Markdown symbol (subtle) -->
+  <text x="25" y="28" font-family="monospace" font-size="6" fill="#4a5568" opacity="0.6">M↓</text>
+</svg>

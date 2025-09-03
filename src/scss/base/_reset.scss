@@ -1,0 +1,47 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+// Base styles and reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, .reveal-viewport {
+  @include dark-gradient;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body, .reveal {
+  color: $text-gray;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  @include heading-style($font-size-base);
+  margin: 0;
+}
+
+.reveal {
+  h1 { @include heading-style($font-size-xxxlarge); }
+  h2 { @include heading-style($font-size-xxlarge); }
+  h3 { @include heading-style($font-size-xlarge); }
+  h4 { @include heading-style(1.8em); }
+  
+  p, ul, ol {
+    font-size: $font-size-base;
+    line-height: 1.4em;
+    color: $text-gray;
+    text-align: left;
+  }
+  
+  ol li, ul li {
+    font-size: $font-size-small;
+    line-height: 1.2em;
+    text-align: left;
+  }
+}
