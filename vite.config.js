@@ -4,6 +4,9 @@ import fs from 'fs'
 import path from 'path'
 
 export default defineConfig({
+  // Base URL for GitHub Pages
+  base: '/markdown-presentation-online-editor/',
+
   // Base configuration
   root: 'src',
   publicDir: '../public',
